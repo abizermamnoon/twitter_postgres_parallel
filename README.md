@@ -2,9 +2,9 @@
 
 |     | sequential | parallel |
 | --- | ---------- | -------- |
-| normalized (unbatched) | ![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_normalized_sequential/badge.svg) | ![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_normalized_parallel/badge.svg) |
-| normalized (batched) | ![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_normalizedbatch_sequential/badge.svg) |  ![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_normalizedbatch_parallel/badge.svg) |
-| denormalized | ![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_denormalized_sequential/badge.svg) | ![](https://github.com/mikeizbicki/twitter_postgres_parallel/workflows/tests_denormalized_parallel/badge.svg) |
+| normalized (unbatched) | ![](https://github.com/abizermamnoon/twitter_postgres_parallel/workflows/tests_normalized_sequential/badge.svg) | ![](https://github.com/abizermamnoon/twitter_postgres_parallel/workflows/tests_normalized_parallel/badge.svg) |
+| normalized (batched) | ![](https://github.com/abizermamnoon/twitter_postgres_parallel/workflows/tests_normalizedbatch_sequential/badge.svg) |  ![](https://github.com/abizermamnoon/twitter_postgres_parallel/workflows/tests_normalizedbatch_parallel/badge.svg) |
+| denormalized | ![](https://github.com/abizermamnoon/twitter_postgres_parallel/workflows/tests_denormalized_sequential/badge.svg) | ![](https://github.com/abizermamnoon/twitter_postgres_parallel/workflows/tests_denormalized_parallel/badge.svg) |
 
 In this assignment, you will learn how to load data into postgres much faster using two techniques:
 1. batch loading (i.e. running the INSERT command on more than one row at a time)
@@ -280,9 +280,9 @@ Ensure that your runtimes on the lambda server are recorded below.
 
 |                        | elapsed time (sequential) | elapsed time (parallel)   |
 | -----------------------| ------------------------- | ------------------------- |
-| `pg_normalized`        |                           |                           | 
-| `pg_normalized_batch`  |                           |                           | 
-| `pg_denormalized`      |                           |                           | 
+| `pg_normalized`        |     7 min 58s                      |                           | 
+| `pg_normalized_batch`  | 2 min 53s                          |                           | 
+| `pg_denormalized`      | 9.72s                          |                           | 
 
 Then upload a link to your forked github repo on sakai.
 
