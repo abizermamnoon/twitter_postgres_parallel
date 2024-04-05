@@ -280,9 +280,9 @@ Ensure that your runtimes on the lambda server are recorded below.
 
 |                        | elapsed time (sequential) | elapsed time (parallel)   |
 | -----------------------| ------------------------- | ------------------------- |
-| `pg_normalized`        |     7 min 58s                      |                           | 
-| `pg_normalized_batch`  | 2 min 53s                          |                           | 
-| `pg_denormalized`      | 9.72s                          |                           | 
+| `pg_normalized`        |     459.837853584 seconds                      |                           | 
+| `pg_normalized_batch`  | 174.240164356 seconds                          |                           | 
+| `pg_denormalized`      | 24.72s                          |3.979378343 seconds                           | 
 
 Then upload a link to your forked github repo on sakai.
 
@@ -291,3 +291,25 @@ Then upload a link to your forked github repo on sakai.
 > (It is easy to pass the test cases by just doing everything sequentially.)
 > Instead, you must also implement the parallelism correctly so that the parallel runtimes above are about 10x faster than the sequential runtimes.
 > (Again, they should be 10x faster because we are doing 10 files in parallel.)
+Citations:
+@article{Tange2011a,
+  title = {GNU Parallel - The Command-Line Power Tool},
+  author = {O. Tange},
+  address = {Frederiksberg, Denmark},
+  journal = {;login: The USENIX Magazine},
+  month = {Feb},
+  number = {1},
+  volume = {36},
+  url = {http://www.gnu.org/s/parallel},
+  year = {2011},
+  pages = {42-47},
+  doi = {http://dx.doi.org/10.5281/zenodo.16303}
+}
+
+(Feel free to use \nocite{Tange2011a})
+
+This helps funding further development; AND IT WON'T COST YOU A CENT.
+If you pay 10000 EUR you should feel free to use GNU Parallel without citing.
+
+If you send a copy of your published article to tange@gnu.org, it will be
+mentioned in the release notes of next version of GNU Parallel.
