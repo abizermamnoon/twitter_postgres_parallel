@@ -280,8 +280,8 @@ Ensure that your runtimes on the lambda server are recorded below.
 
 |                        | elapsed time (sequential) | elapsed time (parallel)   |
 | -----------------------| ------------------------- | ------------------------- |
-| `pg_normalized`        |     459.837853584 seconds                      |  2m7.873s                         | 
-| `pg_normalized_batch`  | 174.240164356 seconds                          |                           | 
+| `pg_normalized`        |     459.837853584 seconds                      |  57.56s                         | 
+| `pg_normalized_batch`  | 174.240164356 seconds                          | 15.06s                          | 
 | `pg_denormalized`      | 24.72s                          |3.979378343 seconds                           | 
 
 Then upload a link to your forked github repo on sakai.
